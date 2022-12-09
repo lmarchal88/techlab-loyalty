@@ -1,14 +1,14 @@
-name: Publish Decathlon
+name: Publish Weather
 env:
-  api: decathlon
+  api: weather
 on:
   push:
     branches:
       - main
     paths:
-      - apis/decathlon/**
+      - apis/weather/**
       - apis/defaults.json
-      - .github/workflows/decathlon.yaml
+      - .github/workflows/weather.yaml
 jobs:
   docker:
     if: "!contains(github.event.head_commit.message, '[SKIP-CI]')" 
