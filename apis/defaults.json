@@ -28,7 +28,7 @@
   ],
   "tags": {
     "Usages": [
-      "Couponing"
+      "Groupe"
     ],
     "Team": [
       "Loyalty"
@@ -42,13 +42,7 @@
   ],
   "applications": [
     {
-      "name": "GodFather",
-      "enabled": true,
-      "state": "approved",
-      "oauthResources": []
-    },
-    {
-      "name": "The Good Sportswear Shop",
+      "name": "Kyriba",
       "enabled": true,
       "state": "approved",
       "oauthResources": []
