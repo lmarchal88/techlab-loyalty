@@ -4,11 +4,11 @@
       "$import": "../defaults.json"
     },
     "with": {
-      "name": "Amazon personalized coupons",
-      "summary": "Get coupons with your email",
-      "path": "/amazon",
+      "name": "InfoWatt",
+      "summary": "Suivez la production d'energie Renouvelables en Temps reéel",
+      "path": "/infowatt",
       "version": "1.0-2",
-      "backendBasepath": "http://amazon.demo:2001/"
+      "backendBasepath": "http://infowatt.demo:2001/"
     }
   }
 }
