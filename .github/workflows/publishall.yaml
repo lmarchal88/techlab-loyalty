@@ -8,7 +8,7 @@ jobs:
       matrix:
         api:
           - infowatt
-          - weather
+          - eolelocator
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the git repository
