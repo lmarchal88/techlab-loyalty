@@ -3,18 +3,18 @@ info:
   contact:
     name: demo
     email: demo@axway.com
-  title: 'amazon coupon api'
+  title: 'Eole Locator api'
   version: '1.0'
-  description: 'https://api.amazon.com/coupon/ specs'
+  description: 'https://api.eolelocator.com/coupon/ specs'
 servers:
-  - url: 'http://amazon.demo:2001/amazon'
+  - url: 'http://eolelocator.demo:2002/'
 tags:
-  - name: coupon
-  - name: 'amazon'
+  - name: eole
+  - name: 'locator'
 paths:
-  /coupon:
+  /eole:
     get:
-      summary: Get a amazon coupon
+      summary: Get parc eolien par pays
       tags: []
       responses:
         '200':
@@ -22,14 +22,14 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/amazonCoupon'
+                $ref: '#/components/schemas/parceolien'
               examples: {}
-      operationId: get-amazon-coupon
-      description: Get a coupon for amazon
+      operationId: get-eole-locate
+      description: Get parc eolien par pays
     parameters: []
 components:
   schemas:
-    amazonDateRange:
+    eolelocatorDateRange:
       title: DateRange
       type: object
       properties:
@@ -39,8 +39,8 @@ components:
         end:
           type: string
           x-faker: date.future
-    amazonCoupon:
-      title: Coupon
+    parceolien:
+      title: PARC EOLIEN
       type: object
       x-examples: {}
       properties:
@@ -60,7 +60,7 @@ components:
             - SWAG_ON
             - JUSTDOIT
         validity:
-          $ref: '#/components/schemas/amazonDateRange'
+          $ref: '#/components/schemas/eolelocatorDateRange'
         amount:
           type: string
           enum:

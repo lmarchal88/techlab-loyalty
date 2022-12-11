@@ -1,0 +1,14 @@
+{
+  "$merge": {
+    "source": {
+      "$import": "../defaults.json"
+    },
+    "with": {
+      "name": "eolelocator",
+      "summary": "Localiser les parcs eoliens",
+      "path": "/eolelocator",
+      "version": "1.0-1",
+      "backendBasepath": "http://eolelocator.demo:2002/"
+    }
+  }
+}

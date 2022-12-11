@@ -3,18 +3,18 @@ info:
   contact:
     name: demo
     email: demo@axway.com
-  title: 'decathlon coupon api'
+  title: 'Info watt api'
   version: '1.0'
-  description: 'https://api.decathlon.com/coupon/ specs'
+  description: 'https://api.infowatt.com/coupon/ specs'
 servers:
-  - url: 'http://decathlon.demo:2002/'
+  - url: 'http://infowatt.demo:2001/infowatt'
 tags:
   - name: coupon
-  - name: 'decathlon'
+  - name: 'infowatt'
 paths:
-  /coupon:
+  /infowatt:
     get:
-      summary: Get a decathlon coupon
+      summary: Get Watt Production Informations
       tags: []
       responses:
         '200':
@@ -22,14 +22,14 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/decathlonCoupon'
+                $ref: '#/components/schemas/infowatt'
               examples: {}
-      operationId: get-decathlon-coupon
-      description: Get a coupon for decathlon
+      operationId: get-infowatt
+      description: Get Watt Production Informations
     parameters: []
 components:
   schemas:
-    decathlonDateRange:
+    infowattDateRange:
       title: DateRange
       type: object
       properties:
@@ -39,8 +39,8 @@ components:
         end:
           type: string
           x-faker: date.future
-    decathlonCoupon:
-      title: Coupon
+    infowatt:
+      title: Watt
       type: object
       x-examples: {}
       properties:
@@ -60,7 +60,7 @@ components:
             - SWAG_ON
             - JUSTDOIT
         validity:
-          $ref: '#/components/schemas/decathlonDateRange'
+          $ref: '#/components/schemas/infowattDateRange'
         amount:
           type: string
           enum:
