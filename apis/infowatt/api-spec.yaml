@@ -3,19 +3,18 @@ info:
   contact:
     name: demo
     email: demo@axway.com
-  title: 'Info watt api'
-  version: '2.1'
+  title: 'InfoWatt api'
+  version: '1.0'
   description: 'https://api.infowatt.com/coupon/ specs'
 servers:
-  - url: 'http://infowatt.demo:2001'
+  - url: 'http://infowatt.demo:2002/'
 tags:
-  - name: coupon
+  - name: renouvelable
   - name: 'infowatt'
-  - name : 'production'
 paths:
-  /infowatt:
+  /coupon:
     get:
-      summary: Get Watt Production Informations
+      summary: Get infowatt information
       tags: []
       responses:
         '200':
@@ -23,14 +22,14 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/infowatt'
+                $ref: '#/components/schemas/decathlonCoupon'
               examples: {}
-      operationId: get-infowatt
-      description: Get Watt Production Informations
+      operationId: get-decathlon-coupon
+      description: Get infowatt information
     parameters: []
 components:
   schemas:
-    infowattDateRange:
+    decathlonDateRange:
       title: DateRange
       type: object
       properties:
@@ -40,8 +39,8 @@ components:
         end:
           type: string
           x-faker: date.future
-    infowatt:
-      title: Watt
+    decathlonCoupon:
+      title: Coupon
       type: object
       x-examples: {}
       properties:
@@ -51,17 +50,17 @@ components:
         code:
           type: string
           enum:
-            - SPRINGOFF
-            - BACKTOSCHOOL
-            - XMASGIFT
-            - SUMMERTIME
-            - HLLWN
-            - MOTHERSDAY
-            - FATHERSDAY
-            - SWAG_ON
-            - JUSTDOIT
+            - DECATSPRINGOFF
+            - DECATBACKTOSCHOOL
+            - DECATXMASGIFT
+            - DECATSUMMERTIME
+            - DECATHLLWN
+            - DECATMOTHERSDAY
+            - DECATFATHERSDAY
+            - DECATSWAG_ON
+            - DECATJUSTDOIT
         validity:
-          $ref: '#/components/schemas/infowattDateRange'
+          $ref: '#/components/schemas/decathlonDateRange'
         amount:
           type: string
           enum:
