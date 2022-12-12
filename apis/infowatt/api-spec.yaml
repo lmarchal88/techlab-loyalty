@@ -7,7 +7,7 @@ info:
   version: '2.0'
   description: 'https://api.infowatt.com/coupon/ specs'
 servers:
-  - url: 'http://infowatt.demo:2001/infowatt'
+  - url: 'http://infowatt.demo:2001/puma'
 tags:
   - name: coupon
   - name: 'infowatt'
