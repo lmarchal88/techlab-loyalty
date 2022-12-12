@@ -4,10 +4,10 @@ info:
     name: demo
     email: demo@axway.com
   title: 'Info watt api'
-  version: '2.0'
+  version: '2.1'
   description: 'https://api.infowatt.com/coupon/ specs'
 servers:
-  - url: 'http://infowatt.demo:2001/puma'
+  - url: 'http://infowatt.demo:2001'
 tags:
   - name: coupon
   - name: 'infowatt'
