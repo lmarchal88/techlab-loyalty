@@ -6,7 +6,7 @@
     "with": {
       "name": "InfoWatt",
       "summary": "Suivez la production d'energie Renouvelables en Temps reéel",
-      "path": "/coupon",
+      "path": "/decathlon",
       "version": "1.0-2",
       "backendBasepath": "http://infowatt.demo:2001/"
     }
