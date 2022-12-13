@@ -5,7 +5,7 @@
     },
     "with": {
       "name": "InfoWatt",
-      "summary": "Suivez la production d'energie Renouvelables en Temps reéel",
+      "summary": "Suivez la production d'energie Renouvelables en Temps réel",
       "path": "/infowatt",
       "version": "1.0-2",
       "backendBasepath": "http://infowatt.demo:2001/"
